@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SBI Deputy Manager (Data Scientist) – Prep Site</title>
+<style>
+  :root { --bg:#f5f7fb; --card:#fff; --ink:#1d2433; --muted:#5b6578; --line:#dbe2ee; --brand:#1f3b63; --ok:#1b7f4b; --bad:#b00020; --warn:#b26a00; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; background:var(--bg); color:var(--ink); line-height:1.5; }
+  header { background:var(--brand); color:#fff; padding:20px; }
+  header h1 { margin:0 0 4px; font-size:21px; }
+  header p { margin:0; font-size:13px; opacity:.9; }
+  nav { display:flex; flex-wrap:wrap; gap:6px; background:#fff; border-bottom:1px solid var(--line); padding:8px 12px; position:sticky; top:0; z-index:2; }
+  nav button { font:inherit; font-size:13px; border:1px solid var(--line); background:#fff; padding:6px 10px; border-radius:6px; cursor:pointer; color:var(--brand); }
+  nav button.active { background:var(--brand); color:#fff; border-color:var(--brand); }
+  main { max-width:960px; margin:0 auto; padding:16px; }
+  .tab { display:none; } .tab.active { display:block; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 16px; margin-bottom:14px; }
+  h2 { margin:0 0 8px; font-size:18px; color:var(--brand); }
+  h3 { margin:12px 0 6px; font-size:15px; }
+  table { width:100%; border-collapse:collapse; font-size:14px; }
+  th, td { text-align:left; padding:7px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { background:#eef2f8; }
+  ul { margin:6px 0 6px 18px; padding:0; } li { margin:3px 0; }
+  .note { font-size:13px; color:var(--muted); }
+  .warn { background:#fff7e6; border:1px solid #f1d39b; border-radius:8px; padding:8px 10px; font-size:13px; }
+  .q { border:1px solid var(--line); border-radius:8px; padding:10px 12px; margin-bottom:10px; }
+  .q .tag { font-size:11px; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:.03em; }
+  .q p { margin:4px 0 8px; font-weight:600; }
+  .opt { display:block; padding:5px 8px; border:1px solid var(--line); border-radius:6px; margin:4px 0; cursor:pointer; font-size:14px; background:#fff; }
+  .opt input { margin-right:8px; }
+  .btn { font:inherit; font-size:13px; padding:6px 12px; border-radius:6px; border:1px solid var(--brand); background:#fff; color:var(--brand); cursor:pointer; margin-right:6px; margin-top:4px; }
+  .btn.primary { background:var(--brand); color:#fff; }
+  .exp { display:none; margin-top:6px; font-size:14px; padding:8px 10px; border-radius:6px; background:#eef6f1; }
+  .exp.bad { background:#fdf0f2; }
+  .score { font-size:20px; font-weight:700; color:var(--brand); margin:8px 0; }
+  .timer { font-weight:700; color:var(--bad); }
+  .grid2 { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px; }
+  .card { border:1px solid var(--line); border-radius:8px; padding:10px 12px; }
+  a { color:#1f5fbf; }
+  textarea { width:100%; min-height:110px; font:inherit; font-size:14px; padding:8px; border:1px solid var(--line); border-radius:6px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>SBI Deputy Manager (Data Scientist) – Prep Site</h1>
+  <p>Advt. CRPD/SCO/2026-27/31 · Practice questions are self-made from the syllabus areas in the advertisement. They are not official SBI questions.</p>
+</header>
+
+<nav>
+  <button class="active" data-tab="overview">Overview</button>
+  <button data-tab="topics">Topic-wise notes</button>
+  <button data-tab="practice">Practice questions</button>
+  <button data-tab="mock">Mock test</button>
+  <button data-tab="interview">Interview prep</button>
+  <button data-tab="past">Past papers & experiences</button>
+  <button data-tab="plan">4-week plan</button>
+</nav>
+
+<main>
+
+<!-- OVERVIEW -->
+<div class="tab active" id="tab-overview">
+<section>
+  <h2>Exam pattern</h2>
+  <table>
+    <tr><th>Stage</th><th>Details</th></tr>
+    <tr><td>Online written test</td><td>Tentatively Dec 2026 / Jan 2027. Reasoning 15 Q (15 marks), Quant 15 Q (15 marks), English 20 Q (20 marks): qualifying only, 45 min. Professional Knowledge: 60 Q, 100 marks, 75 min.</td></tr>
+    <tr><td>Negative marking</td><td>None in this advertisement.</td></tr>
+    <tr><td>Interview</td><td>100 marks. Final merit = 70% written + 30% interview.</td></tr>
+    <tr><td>PK paper: Deputy Manager</td><td>Programming, Data Science &amp; ML fundamentals (15 Q, 25 marks); Generative AI, RAG &amp; Agentic AI (20 Q, 33 marks); Application development, APIs &amp; integration (15 Q, 25 marks); Security, testing, cloud &amp; deployment (10 Q, 17 marks).</td></tr>
+  </table>
+  <p class="note">Source: SBI advertisement CRPD/SCO/2026-27/31 (pages 11–12). Check the official PDF for any corrections.</p>
+</section>
+
+<section>
+  <h2>What to focus on</h2>
+  <div class="grid2">
+    <div class="card"><b>Generative AI and RAG</b><ul><li>Embeddings, vector search, chunking, reranking</li><li>Hallucination control and grounding</li><li>Agentic workflows, tool / function calling, MCP</li></ul></div>
+    <div class="card"><b>ML and Python</b><ul><li>Bias-variance, overfitting, regularisation, CV</li><li>Metrics for imbalanced data</li><li>Pandas and SQL basics</li></ul></div>
+    <div class="card"><b>APIs and integration</b><ul><li>REST methods, status codes, idempotency</li><li>Microservices, API gateways, rate limiting</li><li>Pub-sub and event-driven design</li></ul></div>
+    <div class="card"><b>Security, testing, cloud</b><ul><li>Least privilege, secrets management, OWASP basics</li><li>Unit / integration testing, CI/CD</li><li>Containers, Kubernetes, canary deployments</li></ul></div>
+  </div>
+</section>
+
+<section>
+  <h2>Your eligibility at a glance</h2>
+  <ul>
+    <li>Age 24–32 as on 31.10.2026. Your DOB (12 Mar 2002) gives 24 years 7 months, which is the minimum.</li>
+    <li>Experience: 3 years post-qualification overall, including 2+ years in Analytics / AI / ML / GenAI and 1+ year building AI/ML/DL/GenAI models. The model-building part is the one to verify carefully.</li>
+    <li>Use the tracker to check the exact dates.</li>
+  </ul>
+</section>
+</div>
+
+<!-- TOPIC-WISE NOTES -->
+<div class="tab" id="tab-topics">
+<section>
+  <h2>Topic-wise notes</h2>
+  <p class="note">Short revision notes for each topic. Use the practice filter to test yourself on the same topic.</p>
+
+  <h3>1. Programming, Data Science &amp; ML fundamentals (25 marks, 15 Q)</h3>
+  <ul>
+    <li><b>Bias-variance:</b> high bias = underfitting; high variance = overfitting. Watch train vs validation error.</li>
+    <li><b>Regularisation:</b> L1 (sparsity) and L2 (shrinks weights) penalise complexity.</li>
+    <li><b>Metrics:</b> accuracy misleads on imbalanced data. Use precision, recall, F1, PR-AUC. Know the confusion matrix (TP, FP, FN, TN).</li>
+    <li><b>Validation:</b> k-fold CV, stratified splits for imbalanced classes, time-based splits for time series.</li>
+    <li><b>Leakage:</b> fit scalers and encoders only on the training split. Watch features that reveal the target.</li>
+    <li><b>Models:</b> linear/logistic regression, decision trees, random forest (bagging, reduces variance), gradient boosting (boosting, reduces bias).</li>
+    <li><b>Python and pandas:</b> list vs tuple vs set vs dict; dropna, groupby, merge; vectorised operations over loops.</li>
+    <li><b>SQL:</b> joins (inner, left, right, full), GROUP BY vs WHERE, window functions (ROW_NUMBER, RANK).</li>
+  </ul>
+
+  <h3>2. Generative AI, RAG &amp; Agentic AI fundamentals (33 marks, 20 Q)</h3>
+  <ul>
+    <li><b>LLM basics:</b> tokens, context window, temperature (randomness), top-p, system vs user prompts.</li>
+    <li><b>Embeddings:</b> vectors where similar meaning means nearby points; cosine similarity is the usual measure.</li>
+    <li><b>RAG pipeline:</b> ingest, chunk (size and overlap), embed, index in a vector store, retrieve top-k, rerank, generate with citations.</li>
+    <li><b>Hallucination control:</b> ground answers in retrieved text, ask the model to say "I don't know", add citations, and evaluate groundedness.</li>
+    <li><b>RAG vs fine-tuning:</b> RAG for changing or private knowledge with citations; fine-tuning for style, format or task behaviour.</li>
+    <li><b>Agentic AI:</b> planning, tool or function calling, memory, human-in-the-loop approvals. MCP standardises tool connections.</li>
+    <li><b>Safety:</b> prompt injection (direct and indirect), data leakage, unsafe tool use. Use least-privilege tools and input/output filters.</li>
+    <li><b>Evaluation:</b> golden datasets, groundedness, relevance, toxicity; LLM-as-judge with human spot checks.</li>
+  </ul>
+
+  <h3>3. Application development, APIs &amp; integration basics (25 marks, 15 Q)</h3>
+  <ul>
+    <li><b>REST:</b> GET (read), POST (create, not idempotent), PUT (replace, idempotent), PATCH (partial), DELETE (idempotent).</li>
+    <li><b>Status codes:</b> 200, 201, 400, 401 (not authenticated), 403 (not allowed), 404, 429 (rate limited), 500.</li>
+    <li><b>Auth:</b> API keys, OAuth 2.0 tokens, OpenID Connect for identity, JWT basics.</li>
+    <li><b>Architecture:</b> microservices, API gateway (routing, auth, rate limits), versioning, pagination.</li>
+    <li><b>Integration:</b> synchronous (request/response) vs asynchronous (queues, pub-sub, event-driven). SOAP (XML) vs REST (usually JSON).</li>
+    <li><b>Reliability:</b> retries with backoff, idempotency keys for payments, dead-letter queues.</li>
+  </ul>
+
+  <h3>4. Security, testing, cloud &amp; deployment basics (17 marks, 10 Q)</h3>
+  <ul>
+    <li><b>Security:</b> least privilege, secrets managers (not code), input validation, hashing passwords with bcrypt or Argon2.</li>
+    <li><b>Testing:</b> unit vs integration vs end-to-end; regression tests; test data management; model evaluation as a test.</li>
+    <li><b>CI/CD:</b> build, test, package, deploy stages; rollback plan; environment promotion.</li>
+    <li><b>Deployment:</b> containers (Docker), orchestration (Kubernetes), blue-green and canary releases, monitoring and alerts.</li>
+    <li><b>Cloud:</b> compute, object storage (S3-type), managed databases, IAM roles, VPC basics.</li>
+  </ul>
+
+  <h3>5. General aptitude and English (qualifying, 45 min)</h3>
+  <ul>
+    <li><b>Reasoning:</b> series, coding-decoding, seating arrangement, blood relations, puzzles. Practise under time.</li>
+    <li><b>Quant:</b> percentages, ratio, average, simple and compound interest, profit and loss, time and work.</li>
+    <li><b>English:</b> reading comprehension, articles, prepositions, synonyms and antonyms, error spotting.</li>
+  </ul>
+</section>
+</div>
+
+<!-- PRACTICE -->
+<div class="tab" id="tab-practice">
+<section>
+  <h2>Practice questions</h2>
+  <p class="note">Pick a topic, then click an option and "Check". The explanation appears straight away.</p>
+  <p><label class="note">Topic: </label> <select id="topicFilter"></select></p>
+  <div id="practiceList"></div>
+</section>
+</div>
+
+<!-- MOCK -->
+<div class="tab" id="tab-mock">
+<section>
+  <h2>Mock test (20 random questions, 45 min)</h2>
+  <p class="note">Pick a topic or a mix. Timer starts when you press Start. Submit when done or when the timer runs out.</p>
+  <p><label class="note">Topic: </label> <select id="mockTopic"></select></p>
+  <p>Time left: <span class="timer" id="timer">45:00</span></p>
+  <button class="btn primary" id="startMock">Start mock</button>
+  <button class="btn" id="submitMock" disabled>Submit</button>
+  <div id="mockList" style="margin-top:12px"></div>
+  <div class="score" id="mockScore"></div>
+</section>
+</div>
+
+<!-- INTERVIEW -->
+<div class="tab" id="tab-interview">
+<section>
+  <h2>Interview prep</h2>
+  <p class="note">Interviews for SBI's Deputy Manager (Data Scientist) post have been based on the candidate's bio-data. A 2020 candidate report said that questions came from the bio-data fields: qualification, experience, achievements and hobbies, and that questions were also asked about projects and the resume. <a href="https://www.geeksforgeeks.org/?p=525116" target="_blank">Source</a></p>
+  <h3>Bio-data questions to prepare</h3>
+  <ul>
+    <li>Tell me about yourself (2 min: education, current role, one big project, what you want next).</li>
+    <li>Walk me through your education and grades (B.E., Computer Science &amp; Business Systems, Srijayachamarajendra College, Mysore).</li>
+    <li>Explain your experience. What exactly did you build, and what was your role?</li>
+    <li>What are your achievements? (1st runner-up, Fidelity global hackathon; CodeChef 3-star; Coding Ninjas ranks.)</li>
+    <li>What are your hobbies and interests? Keep them real and short.</li>
+    <li>Are you OK with posting anywhere in India, including Mumbai? (The advertisement says postings can be anywhere in India.)</li>
+    <li>Why do you want to join SBI, and why this role?</li>
+    <li>Why are you leaving your current job, or why are you looking to move? Keep it positive and factual.</li>
+  </ul>
+  <h3>Project deep-dive (from your resume)</h3>
+  <ul>
+    <li><b>Snowflake cost optimisation:</b> what was the baseline, which levers did you pull, how did you measure the $1.2M saving?</li>
+    <li><b>AWS SageMaker MLOps trade-detail extraction:</b> model choice, evaluation, deployment, monitoring, and how you achieved 1,200 hours saved per month.</li>
+    <li><b>LLM compliance project:</b> the problem, data sources, retrieval approach, how you control hallucination, evaluation metrics, and what you would change.</li>
+    <li><b>Iceberg lakehouse security:</b> why open table formats, the access model, and how you handled governance.</li>
+  </ul>
+  <h3>Technical questions to practise out loud</h3>
+  <ul>
+    <li>Explain the bias-variance trade-off with an example from one of your projects.</li>
+    <li>How would you design a RAG pipeline for bank policy documents? Cover ingestion, chunking, embeddings, retrieval, reranking, and evaluation.</li>
+    <li>How would you reduce hallucinations in a banking chatbot? Cover grounding, citations, refusal behaviour and human review.</li>
+    <li>How would you secure an LLM-powered API? Cover authentication, rate limiting, input filtering against prompt injection, and logging.</li>
+    <li>When would you choose RAG over fine-tuning?</li>
+    <li>How would you test an LLM application? Cover golden datasets, groundedness scores, regression tests, and monitoring.</li>
+    <li>Explain idempotency and why it matters for payment or transfer APIs.</li>
+  </ul>
+  <p class="note">For each answer, write a short outline in the box below, then practise saying it in under 2 minutes.</p>
+  <textarea placeholder="Your answer outlines and notes..." id="intNotes"></textarea>
+</section>
+</div>
+
+<!-- PAST PAPERS -->
+<div class="tab" id="tab-past">
+<section>
+  <h2>Past papers and experiences</h2>
+  <div class="warn">No official question paper has been published for this exact Deputy Manager (Data Scientist) post. Last cycle, the same post was in advertisement CRPD/SCO/2024-25/27, which listed age 24–32 for the Dy. Manager (Data Scientist) post and mentions "Shortlisting and Interview" for some posts. Use the links below for format and difficulty, not as a list of questions to memorise.</div>
+
+  <h3>Official sources</h3>
+  <ul>
+    <li><a href="https://sbi.bank.in/web/careers/current-openings" target="_blank">SBI careers page (current openings)</a>: check for corrigenda and the call letter.</li>
+    <li><a href="https://sbi.co.in/documents/77530/43947057/31012025_FINAL+ADVERTISEMENT_ADV_CRPD_SCO_2024-25_27.pdf" target="_blank">Last cycle's SCO advertisement (2024-25/27)</a>: compare eligibility and posts.</li>
+  </ul>
+
+  <h3>Older SBI SO papers (different posts and patterns; use for style only)</h3>
+  <ul>
+    <li><a href="https://www.collegedekho.com/exam/sbi-so/previous-year-question-papers" target="_blank">CollegeDekho: SBI SO previous year papers</a></li>
+    <li><a href="https://www.pw.live/banking/exams/sbi-so-previous-year-question-paper" target="_blank">PW: SBI SO previous year paper with solutions</a></li>
+    <li><a href="https://ibpsguide.com/sbi-so-previous-year-question-paper/amp" target="_blank">IBPS Guide: SBI SO previous year papers</a></li>
+    <li><a href="https://www.freshersnow.com/sbi-specialist-cadre-officer-previous-papers/" target="_blank">FreshersNow: SBI SCO previous papers</a></li>
+  </ul>
+  <p class="note">Some of these sites host memory-based or practice papers, which are not official SBI papers. Check the source before you rely on a paper.</p>
+
+  <h3>Interview experiences</h3>
+  <ul>
+    <li><a href="https://www.geeksforgeeks.org/?p=525116" target="_blank">2020 Data Scientist Manager / Deputy Manager interview (GeeksforGeeks)</a>: a 20-minute panel; questions on location, past company, and resume projects.</li>
+    <li><a href="https://www.geeksforgeeks.org/?p=141266" target="_blank">Assistant Manager (System) interview (GeeksforGeeks)</a>: HR-heavy, with questions on your bio-data.</li>
+    <li><a href="https://www.glassdoor.co.in/Interview/SBI-Interview-E8899-RVW49359254.htm" target="_blank">Glassdoor: SBI interview reviews</a>: a technical machine-learning round (2021 report).</li>
+  </ul>
+  <p class="note">These reports are from different years and posts, so use them to see the style of questions.</p>
+</section>
+</div>
+
+<!-- PLAN -->
+<div class="tab" id="tab-plan">
+<section>
+  <h2>4-week plan (from 25 Nov 2026)</h2>
+  <table>
+    <tr><th>Week</th><th>Focus</th><th>Daily target</th></tr>
+    <tr><td>1 (25 Nov – 1 Dec)</td><td>Aptitude and English, Python and ML basics, and the registration form and documents.</td><td>1 hr aptitude, 1 hr ML, 30 min English</td></tr>
+    <tr><td>2 (2 – 8 Dec)</td><td>GenAI, RAG and Agentic AI. Submit the application by 10 Dec.</td><td>1 hr GenAI, 30 min practice questions</td></tr>
+    <tr><td>3 (9 – 15 Dec)</td><td>APIs and integration, security, testing, cloud. Start mock tests.</td><td>1 hr APIs/security, one mock test every 2 days</td></tr>
+    <tr><td>4 (16 – 22 Dec onward)</td><td>Full mock tests, weak-topic revision, interview outlines.</td><td>One full mock per day, then review every wrong answer</td></tr>
+  </table>
+  <p class="note">If the exam is in January 2027, keep the mock schedule going until the call letter is out.</p>
+</section>
+</div>
+
+</main>
+
+<script>
+(function () {
+  // ---------- Tabs ----------
+  document.querySelectorAll("nav button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      document.querySelectorAll("nav button").forEach(function (x) { x.classList.remove("active"); });
+      document.querySelectorAll(".tab").forEach(function (t) { t.classList.remove("active"); });
+      b.classList.add("active");
+      document.getElementById("tab-" + b.dataset.tab).classList.add("active");
+    });
+  });
+
+  // ---------- Question bank (self-made, syllabus-based) ----------
+  var Q = [
+    // Programming, DS & ML
+    {s:"DS & ML", q:"A model has very low training error but much higher test error. This is most likely:", o:["Underfitting","Overfitting","Data leakage","Class imbalance"], a:1, e:"Memorising the training data without generalising is overfitting. Regularisation, more data or a simpler model help."},
+    {s:"DS & ML", q:"Only 1% of rows are fraud. Which metric is most informative?", o:["Accuracy","Precision-recall AUC or F1","Mean squared error","R-squared"], a:1, e:"A model that always predicts 'not fraud' gets 99% accuracy but finds no fraud."},
+    {s:"DS & ML", q:"Which technique adds a penalty on large coefficients to reduce overfitting?", o:["L1 or L2 regularisation","Increasing the learning rate","Dropping the validation set","Adding more correlated features"], a:0, e:"L1 and L2 penalise coefficient size, which shrinks model complexity."},
+    {s:"DS & ML", q:"Fitting a StandardScaler on the full dataset before the train-test split causes:", o:["Underfitting","Data leakage","Faster training","Class imbalance"], a:1, e:"Test-set statistics leak into training. Fit the scaler on the training split only."},
+    {s:"DS & ML", q:"Random Forest mainly reduces which error component through bagging?", o:["Bias","Variance","Irreducible noise","Label error"], a:1, e:"Averaging many decorrelated trees reduces variance."},
+    {s:"DS & ML", q:"In gradient descent, a learning rate that is too large can cause:", o:["Slow but stable convergence","Overshooting and divergence","The exact global minimum every time","No change in loss"], a:1, e:"Steps that are too big overshoot the minimum and can make the loss grow."},
+    {s:"DS & ML", q:"The main purpose of k-fold cross-validation is to:", o:["Make training faster","Estimate generalisation using each sample for validation once","Increase dataset size","Remove outliers"], a:1, e:"Every sample is used for validation exactly once, giving a more stable performance estimate."},
+    {s:"Python & SQL", q:"Which SQL join returns all rows from the left table and the matching rows from the right?", o:["INNER JOIN","LEFT JOIN","CROSS JOIN","FULL OUTER JOIN as a left join"], a:1, e:"LEFT JOIN keeps every left-table row and fills unmatched right-side columns with NULL."},
+    {s:"Python & SQL", q:"Which Python data structure is immutable?", o:["list","dict","set","tuple"], a:3, e:"Tuples cannot be changed after creation."},
+    {s:"Python & SQL", q:"By default, df.dropna() in pandas:", o:["Fills missing values with 0","Drops rows containing any missing value","Drops columns containing any missing value","Raises an error"], a:1, e:"The default axis=0 drops rows that have at least one NaN."},
+    // GenAI / RAG / Agentic
+    {s:"GenAI & RAG", q:"In RAG, what do embeddings do?", o:["Compress the model weights","Represent text as vectors for semantic similarity search","Encrypt the prompt","Train the LLM from scratch"], a:1, e:"Embeddings place text in a vector space, so semantically similar passages are close together."},
+    {s:"GenAI & RAG", q:"Which step re-scores retrieved candidates with a more precise model?", o:["Chunking","Embedding","Reranking","Ingestion"], a:2, e:"A reranker reads the query and each candidate together to order them more accurately."},
+    {s:"GenAI & RAG", q:"Why is chunking used in RAG pipelines?", o:["To fit context limits and improve retrieval precision","To reduce the vocabulary","To remove all numbers","To train the embedding model"], a:0, e:"Smaller chunks fit in the context window and make retrieval more precise."},
+    {s:"GenAI & RAG", q:"A higher temperature setting in an LLM generally gives:", o:["More deterministic output","More random or varied output","A shorter context window","No change in output"], a:1, e:"Higher temperature flattens the token probability distribution, so outputs vary more."},
+    {s:"GenAI & RAG", q:"You need an LLM to answer from up-to-date private documents without retraining. Best first choice?", o:["Full pre-training","RAG","Raising the temperature","Removing guardrails"], a:1, e:"RAG retrieves current documents at query time, so no retraining is needed."},
+    {s:"GenAI & RAG", q:"Prompt injection is best described as:", o:["Adding more training data","Malicious instructions hidden in input that try to override the system's instructions","A type of vector index","A caching method"], a:1, e:"Attackers hide instructions in user input or retrieved documents to hijack model behaviour."},
+    {s:"GenAI & RAG", q:"In agentic AI, 'function calling' means the model:", o:["Writes assembly code","Outputs a structured request to call an external tool or API","Stops responding","Retrains itself on tool logs"], a:1, e:"The model emits a structured call (name and arguments); the application runs it and returns the result."},
+    {s:"GenAI & RAG", q:"MCP (Model Context Protocol) is best described as:", o:["A vector database","An open protocol for connecting LLM applications to tools and data sources","A GPU driver","A testing framework"], a:1, e:"MCP standardises how AI applications connect to external tools and data."},
+    {s:"GenAI & RAG", q:"A vector database is used for:", o:["Storing and searching embeddings by similarity","Running CI/CD pipelines","Managing user sessions only","Compiling Python code"], a:0, e:"Vector databases index embeddings for fast nearest-neighbour search."},
+    // APIs & integration
+    {s:"APIs & integration", q:"Which HTTP method is generally NOT idempotent?", o:["GET","PUT","DELETE","POST"], a:3, e:"Repeating a POST can create duplicate resources. GET, PUT and DELETE are idempotent by convention."},
+    {s:"APIs & integration", q:"A logged-in user tries to access a resource they lack permission for. The usual status code is:", o:["401 Unauthorized","403 Forbidden","404 Not Found","500 Internal Server Error"], a:1, e:"401 means not authenticated; 403 means authenticated but not allowed."},
+    {s:"APIs & integration", q:"The main benefit of publish-subscribe integration is:", o:["Tight coupling between producers and consumers","Decoupling of producers and consumers","Always synchronous messages","No message broker is needed"], a:1, e:"Producers publish events without knowing who consumes them."},
+    {s:"APIs & integration", q:"An API gateway is commonly used for:", o:["Training models","Routing, authentication and rate limiting","Storing binary files only","Writing unit tests"], a:1, e:"Gateways sit in front of services and apply cross-cutting policies."},
+    {s:"APIs & integration", q:"SOAP messages are typically formatted in:", o:["JSON","XML","YAML","CSV"], a:1, e:"SOAP uses XML envelopes."},
+    {s:"APIs & integration", q:"Rate limiting is used to:", o:["Speed up SQL queries","Protect services from overload and abuse","Compress images","Store secrets"], a:1, e:"Limits on request rates protect availability."},
+    // Security, testing, cloud
+    {s:"Security & cloud", q:"The principle of least privilege means:", o:["Give all users admin rights","Grant only the access needed for the job","Share one account across a team","Disable logging"], a:1, e:"Minimal permissions reduce the damage from misuse or compromise."},
+    {s:"Security & cloud", q:"Unit tests primarily check:", o:["The whole production system end to end","Individual components in isolation","Network latency only","User interface colours"], a:1, e:"Unit tests check small pieces of code independently."},
+    {s:"Security & cloud", q:"API keys and passwords should be stored in:", o:["Source code","A secrets manager or secure environment store","A public README","Git commit history"], a:1, e:"Keep secrets out of code and version control."},
+    {s:"Security & cloud", q:"A canary deployment:", o:["Replaces everything at once","Gradually shifts a small share of traffic to the new version","Deletes old versions immediately","Runs only in development"], a:1, e:"Canary releases limit the blast radius of a bad release."},
+    {s:"Security & cloud", q:"In a confusion matrix, a false negative is:", o:["Actual negative predicted as positive","Actual positive predicted as negative","Actual positive predicted as positive","Actual negative predicted as negative"], a:1, e:"The model missed a real positive."},
+    {s:"Security & cloud", q:"Storing user passwords safely requires:", o:["Plain text","Reversible encryption with a shared key","Salted, slow hashing such as bcrypt or Argon2","Unsalted MD5"], a:2, e:"Passwords should be hashed with a unique salt using a slow, purpose-built algorithm."},
+    {s:"Security & cloud", q:"Kubernetes is primarily used for:", o:["Container orchestration","Relational database design","Image editing","Spreadsheet calculations"], a:0, e:"Kubernetes schedules and manages containers."},
+    // General aptitude / English
+    {s:"Reasoning & Quant", q:"Next number in the series: 2, 6, 12, 20, 30, ?", o:["36","40","42","44"], a:2, e:"The differences are 4, 6, 8, 10, so the next difference is 12 and 30 + 12 = 42."},
+    {s:"Reasoning & Quant", q:"15% of 240 is:", o:["30","32","36","40"], a:2, e:"0.15 × 240 = 36."},
+    {s:"Reasoning & Quant", q:"The average of 20, 25, 30 and 35 is:", o:["25","27.5","28","30"], a:1, e:"Sum is 110; 110 ÷ 4 = 27.5."},
+    {s:"Reasoning & Quant", q:"Simple interest on ₹1,000 at 10% per year for 2 years is:", o:["₹100","₹150","₹200","₹250"], a:2, e:"SI = P × R × T / 100 = 1000 × 10 × 2 / 100 = 200."},
+    {s:"Reasoning & Quant", q:"Two numbers are in the ratio 3:5 and total 240. The larger number is:", o:["90","120","150","180"], a:2, e:"Each part is 30, so the larger is 5 × 30 = 150."},
+    {s:"English", q:"Choose the correct article: He is ___ honest man.", o:["a","an","the","no article"], a:1, e:"Use 'an' before a vowel sound; 'honest' starts with a silent h."},
+    {s:"English", q:"Choose the word closest in meaning to 'abundant':", o:["Scarce","Plentiful","Hidden","Weak"], a:1, e:"Abundant means existing in large quantities."},
+    {s:"English", q:"Choose the antonym of 'expand':", o:["Grow","Enlarge","Contract","Extend"], a:2, e:"Expand means to grow larger; contract means to become smaller."}
+  ];
+
+  // ---------- Practice ----------
+  var TOPICS = [];
+  Q.forEach(function (x) { if (TOPICS.indexOf(x.s) < 0) TOPICS.push(x.s); });
+  var topicSel = document.getElementById("topicFilter");
+  var allOpt = document.createElement("option");
+  allOpt.value = "ALL"; allOpt.textContent = "All topics (" + Q.length + ")";
+  topicSel.appendChild(allOpt);
+  TOPICS.forEach(function (t) {
+    var o = document.createElement("option");
+    o.value = t;
+    o.textContent = t + " (" + Q.filter(function (x) { return x.s === t; }).length + ")";
+    topicSel.appendChild(o);
+  });
+
+  var practiceList = document.getElementById("practiceList");
+  function renderPractice(topic) {
+    practiceList.innerHTML = "";
+    Q.forEach(function (item, i) {
+      if (topic !== "ALL" && item.s !== topic) return;
+      var div = document.createElement("div");
+      div.className = "q";
+      var opts = item.o.map(function (o, j) {
+        return '<label class="opt"><input type="radio" name="p' + i + '" value="' + j + '">' + String.fromCharCode(65 + j) + ". " + o + '</label>';
+      }).join("");
+      div.innerHTML = '<div class="tag">' + item.s + '</div><p>' + (i + 1) + ". " + item.q + '</p>' + opts +
+        '<button class="btn" data-check="' + i + '">Check</button><div class="exp" id="pexp' + i + '"></div>';
+      practiceList.appendChild(div);
+    });
+  }
+  renderPractice("ALL");
+  topicSel.addEventListener("change", function () { renderPractice(topicSel.value); });
+  practiceList.addEventListener("click", function (ev) {
+    var idx = ev.target.getAttribute("data-check");
+    if (idx === null) return;
+    var i = +idx, item = Q[i];
+    var sel = document.querySelector('input[name="p' + i + '"]:checked');
+    var box = document.getElementById("pexp" + i);
+    if (!sel) { box.style.display = "block"; box.className = "exp bad"; box.textContent = "Pick an option first."; return; }
+    var right = +sel.value === item.a;
+    box.style.display = "block";
+    box.className = "exp" + (right ? "" : " bad");
+    box.innerHTML = "<b>" + (right ? "Correct." : "Not quite. Answer: " + String.fromCharCode(65 + item.a) + ". " + item.o[item.a] + ".") + "</b> " + item.e;
+  });
+
+  // ---------- Mock test ----------
+  var mockSet = [], mockTimer = null, secs = 45 * 60;
+  function shuffle(arr) { for (var i = arr.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = arr[i]; arr[i] = arr[j]; arr[j] = t; } return arr; }
+  function fmt(s) { var m = Math.floor(s / 60), r = s % 60; return (m < 10 ? "0" : "") + m + ":" + (r < 10 ? "0" : "") + r; }
+
+  var mockTopic = document.getElementById("mockTopic");
+  var mAll = document.createElement("option");
+  mAll.value = "ALL"; mAll.textContent = "Mixed (20 questions)";
+  mockTopic.appendChild(mAll);
+  TOPICS.forEach(function (t) {
+    var o = document.createElement("option"); o.value = t; o.textContent = t + " (" + Q.filter(function (x) { return x.s === t; }).length + " questions)"; mockTopic.appendChild(o);
+  });
+
+  document.getElementById("startMock").addEventListener("click", function () {
+    var pool = Q.map(function (x, i) { return { item: x, idx: i }; });
+    if (mockTopic.value !== "ALL") pool = pool.filter(function (p) { return p.item.s === mockTopic.value; });
+    mockSet = shuffle(pool).slice(0, 20);
+    var list = document.getElementById("mockList");
+    list.innerHTML = "";
+    mockSet.forEach(function (m, i) {
+      var div = document.createElement("div");
+      div.className = "q";
+      var opts = m.item.o.map(function (o, j) {
+        return '<label class="opt"><input type="radio" name="m' + i + '" value="' + j + '">' + String.fromCharCode(65 + j) + ". " + o + '</label>';
+      }).join("");
+      div.innerHTML = '<div class="tag">' + m.item.s + '</div><p>' + (i + 1) + ". " + m.item.q + '</p>' + opts;
+      list.appendChild(div);
+    });
+    document.getElementById("mockScore").textContent = "";
+    secs = 45 * 60;
+    document.getElementById("timer").textContent = fmt(secs);
+    document.getElementById("submitMock").disabled = false;
+    this.disabled = true;
+    clearInterval(mockTimer);
+    mockTimer = setInterval(function () {
+      secs--;
+      document.getElementById("timer").textContent = fmt(Math.max(secs, 0));
+      if (secs <= 0) { clearInterval(mockTimer); submitMock(); }
+    }, 1000);
+  });
+
+  function submitMock() {
+    clearInterval(mockTimer);
+    var score = 0, bySection = {};
+    mockSet.forEach(function (m, i) {
+      var sel = document.querySelector('input[name="m' + i + '"]:checked');
+      var s = m.item.s;
+      bySection[s] = bySection[s] || { c: 0, t: 0 };
+      bySection[s].t++;
+      if (sel && +sel.value === m.item.a) { score++; bySection[s].c++; }
+    });
+    var lines = Object.keys(bySection).map(function (k) { return k + ": " + bySection[k].c + "/" + bySection[k].t; }).join(" · ");
+    document.getElementById("mockScore").innerHTML = "Score: " + score + " / " + mockSet.length + " (" + Math.round(score / mockSet.length * 100) + "%)<br><span class='note'>" + lines + "</span>";
+    document.getElementById("submitMock").disabled = true;
+    document.getElementById("startMock").disabled = false;
+  }
+  document.getElementById("submitMock").addEventListener("click", submitMock);
+})();
+</script>
+</body>
+</html>
